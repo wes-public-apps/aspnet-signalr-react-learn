@@ -1,0 +1,18 @@
+services:
+  frontend:
+    image: node:latest
+    container_name: frontend-reactwebapp
+    working_dir: /client
+    volumes: 
+      - ../../frontend:/client
+    command: ["npm","start"]
+    hostname: 'frontend'
+
+  backend:
+    image: mcr.microsoft.com/dotnet/sdk:5.0
+    container_name: backend-reactwebapp
+    working_dir: /server
+    volumes: 
+      - ../../backend:/server
+    command: ["dotnet","watch","run"]
+    hostname: 'backend'

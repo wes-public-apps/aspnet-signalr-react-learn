@@ -1,0 +1,6 @@
+#Build Files
+[Oo]bj/
+[Bb]in/
+
+#IDE Files
+.vscode/
