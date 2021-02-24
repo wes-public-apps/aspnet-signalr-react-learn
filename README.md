@@ -1,5 +1,13 @@
 # aspnet-signalr-react-learn
 
+# run
+* open terminal
+* change working directory to containers/dev
+* sudo docker-compose up -d
+
+# teardown
+* sudo docker-compose down
+
 # Project Setup
 * in root run "dotnet new web -o RealTimeWebApp"
 * cd RealTimeWebApp

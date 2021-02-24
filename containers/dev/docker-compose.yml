@@ -6,6 +6,8 @@ services:
     volumes: 
       - ../../frontend:/client
     command: ["npm","start"]
+    ports:
+      - "3000:3000"
     hostname: 'frontend'
 
   backend:
@@ -15,4 +17,6 @@ services:
     volumes: 
       - ../../backend:/server
     command: ["dotnet","watch","run"]
+    ports:
+      - "5000-5001:5000-5001"
     hostname: 'backend'
